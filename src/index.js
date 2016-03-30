@@ -20,7 +20,7 @@ inquirer.prompt([{
   fetch(`${baseURL}?${queryParams}`)
     .then(parseJSON) // get the JSON response
     .then((data) => {
-      // For each loop for array of returned games
+      // For-Each loop through array of returned games
       for (const game of data.response.games) {
         console.log(game)
       }
